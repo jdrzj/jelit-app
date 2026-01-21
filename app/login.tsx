@@ -8,6 +8,7 @@ import {
   KeyboardAvoidingView,
   Platform,
   Alert,
+  Image,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { colors } from '@/theme/colors';
@@ -52,6 +53,13 @@ export default function LoginScreen() {
         style={styles.keyboardView}
       >
         <View style={styles.content}>
+          <View style={styles.logoContainer}>
+            <Image
+              source={require('@/assets/images/jelit.png')}
+              style={styles.logo}
+              resizeMode="contain"
+            />
+          </View>
           <Text style={styles.title}>Welcome to Jelit</Text>
           <Text style={styles.subtitle}>
             {isSignUp ? 'Create your account' : 'Sign in to continue'}
@@ -119,6 +127,22 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     paddingHorizontal: 32,
+  },
+  logoContainer: {
+    alignSelf: 'center',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 24,
+    padding: 16,
+    marginBottom: 32,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.08,
+    shadowRadius: 12,
+    elevation: 4,
+  },
+  logo: {
+    width: 88,
+    height: 88,
   },
   title: {
     ...typography.h1,
