@@ -1,0 +1,148 @@
+# 🎨 Jellit UI Redesign — Figma Brief
+
+**Goal:** Transform from clinical medical tracker to calm, meditative wellness experience. Think meditation app aesthetic.
+
+## 🎯 New Color Palette
+
+**Primary Colors:**
+- Primary: `#8FA89E` (Sage green)
+- Primary Light: `#D4E3DE` (Light sage backgrounds)
+- Primary Dark: `#6E8980` (Deep sage)
+
+**Secondary & Accents:**
+- Secondary: `#A8C4BC` (Soft mint)
+- Secondary Light: `#E8F1EE` (Light mint backgrounds)
+- Accent: `#7EA5A3` (Blue-green highlights)
+
+**Surfaces:**
+- Background: `#F7FAF9` (Warm tinted off-white)
+- Surface: `#FDFFFE` (Nearly white)
+- Surface Alt: `#EDF3F1` (Tinted surface)
+
+**Text:**
+- Primary: `#2A3F38` (Soft dark green-gray)
+- Secondary: `#6B7F78` (Sage gray)
+- Tertiary: `#9AABA5` (Light sage gray)
+
+**Semantic:**
+- Error: `#D89B9B` (Soft dusty rose)
+- Success: `#A8C4B3` (Sage green)
+- Warning: `#E8C9A6` (Soft sand)
+
+## 📝 Typography
+
+**Font:** Rounded/humanist sans-serif (Inter Rounded, DM Sans, Nunito Sans)
+
+**Weights:**
+- Headlines: `600` at `28-32px` (NOT bold)
+- Section Headers: `500` at `18-20px`
+- Body: `400-500` at `15-16px`
+- Stats: `600` at `32-36px`
+
+**Rules:** NO all-caps, line height `1.4-1.6`, calm hierarchy
+
+## 🎨 Visual Design
+
+**Cards:**
+- Border radius: `20-24px`
+- Shadow: `0px 4px 16px rgba(0,0,0,0.04)`
+- Background: Subtle gradient `#FDFFFE` to `#F7FAF9`
+
+**Buttons:**
+- Border radius: `16px`
+- Primary: Gradient `#8FA89E` to `#91B5A8`
+- Tap: Scale `0.98`, opacity `0.9`
+
+**Gradients:**
+- Subtle vertical gradients (5-15% opacity)
+- Card backgrounds and empty states
+- Use `expo-linear-gradient`
+- NEVER on text or charts
+
+## 🐻‍❄️ Companion Character
+
+**Asset:** `assets/images/logo.png`
+
+**Usage (ONLY):**
+- Empty states
+- First-time onboarding
+- Summary screens
+
+**NEVER:** During logging, commenting on entries, celebrating
+
+**Empty State Examples:**
+1. **Dashboard Empty:** Companion (90px center) + "Welcome to Jellit. This is a quiet place to notice patterns over time. There's nothing to fix — just observe."
+2. **History Empty:** Companion (70px) + "No entries yet. Your logged entries will appear here"
+3. **Insights Empty:** Companion (65px) + "A quiet week. When you're ready, pick up where you left off. Your body doesn't keep score."
+
+**Visual Treatment:**
+- Calm neutral smile
+- Soft shadow: `rgba(0,0,0,0.06)`, `0 2px 8px`
+- Optional: Subtle gradient circle background (10% opacity)
+
+## 🎭 Motion & Animation
+
+**Transitions:**
+- Duration: `300-400ms` (slow, gentle)
+- Easing: `easeInOut`
+- NO bounce or spring effects
+
+**Interactions:**
+- Button tap: Scale `0.98`, opacity `0.9` (100ms)
+- Fade ins: `350ms`
+- Screen transitions: Fade + subtle horizontal slide
+
+## 📱 Key Screen Changes
+
+**Dashboard:**
+- Stats in gradient cards, weight `600` (not `700`)
+- Softer FAB shadow
+- Empty state with companion
+
+**Log Entry:**
+- Bristol buttons: `52-56px`, gradient on active
+- Inactive: Light background `#EDF3F1`
+- Section spacing: `24px` minimum
+
+**History:**
+- Card spacing: `14-16px`
+- Delete button: Soft rose `#D89B9B`
+- Gradient card backgrounds
+
+**Insights:**
+- Pill-shaped toggle (`24px` radius)
+- Rounded bar ends (`4-6px`)
+- Gradient fills on charts
+- Add interpretive copy: "Variation like this is common"
+
+**Settings:**
+- Pill containers for email
+- Soft sand warning backgrounds `#F5F0E8`
+- Optional companion (40-50px)
+
+## ✅ Design Checklist
+
+- [ ] Feels peaceful, not clinical
+- [ ] Sage/mint palette throughout
+- [ ] Gradients subtle (5-15% opacity)
+- [ ] Medium weight (`500-600`), not bold
+- [ ] Cards: `20-24px` radius
+- [ ] Animations: `300-400ms`, gentle
+- [ ] Companion in empty states only
+- [ ] No pure white backgrounds
+- [ ] Spacing replaces dividers
+
+## 💬 Tone Guidelines
+
+**Allowed:** Noted, Gently, Common, Normal, Tends to, Over time
+**Forbidden:** Perfect, Optimal, Warning, Failure, Should, Must
+
+## 🚀 Deliverables
+
+1. Color palette (all sage/mint/blue-green shades)
+2. Component library (Card, Button variants, Input)
+3. 5 screens: Dashboard, Log, History, Insights, Settings (with empty states)
+4. Companion integration examples
+5. Motion specs & gradient combinations
+
+**Remember:** Serious about health. Gentle about being human.
